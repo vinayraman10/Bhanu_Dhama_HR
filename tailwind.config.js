@@ -9,3 +9,16 @@ module.exports = {
  
   plugins: [require('flowbite/plugin')],
 };
+module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
+    },
+  },
+}
+module.exports = {
+  darkMode: 'class',
+  // ...
+}

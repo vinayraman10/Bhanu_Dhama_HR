@@ -6,51 +6,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bhanu Dhama | Strategic HR Leader | HR Portfolio</title>
 
-  <!-- ✅ Meta SEO Tags -->
+  <!--  Meta SEO Tags -->
   <meta name="description"
     content="Explore Bhanu Dhama’s HR Portfolio showcasing leadership in strategic HR management, employee engagement, performance development, and modern workplace solutions." />
   <meta name="author" content="Bhanu Dhama" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://yourdomain.com" />
 
-  <!-- ✅ Open Graph (OG) for LinkedIn, Facebook -->
+
+  <!-- Open Graph (OG) for LinkedIn, Facebook -->
   <meta property="og:title" content="Bhanu Dhama | HR Leader Portfolio" />
   <meta property="og:description"
     content="Discover Bhanu Dhama’s strategic leadership in Human Resources through this modern HR portfolio site." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourdomain.com" />
   <meta property="og:image" content="https://yourdomain.com/images/preview.jpg" />
 
-  <!-- ✅ Twitter Card for Better Sharing -->
+  <!--  Twitter Card for Better Sharing -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Bhanu Dhama | Strategic HR Portfolio" />
+  <meta name="twitter:url" content="https://yourdomain.com/" />
+  <meta name="twitter:title" content="Bhanu Dhama | HR Leader Portfolio" />
   <meta name="twitter:description"
-    content="Explore Bhanu Dhama’s expertise in modern HR practices and employee development." />
+    content="Discover Bhanu Dhama’s strategic leadership in Human Resources through this modern HR portfolio site." />
   <meta name="twitter:image" content="https://yourdomain.com/images/preview.jpg" />
 
-  <!-- ✅ Favicon -->
+  <!--  Favicon -->
 
   <link rel="shortcut icon" href="woman.png" type="image/x-icon">
-  <!-- ✅ Stylesheets -->
+  <!--  Stylesheets -->
   <link rel="stylesheet" href="style.css" />
   <script src="https://unpkg.com/lucide@latest"></script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com?plugins=daisyui"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!--Pre loads-->
+  <link rel="preload" href="/fonts/myfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+  <!-- Locomotive Scroll for smooth scrolling effects -->
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
 
-  <!-- ✅ Preconnect for Performance -->
+  <!--  Preconnect for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <!-- GSAP Core -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
   <!-- ScrollTrigger Plugin -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
-</head>
 
+  <!-- ===== EmailJS Initialization Script ===== -->
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "NwfdvgsZ5LJsaUotj", // Replace with your own Public Key from EmailJS dashboard
+      });
+    })();
+  </script>
+
+</head>
 
 <body data-scroll-container
   class="flex flex-col min-h-screen dark:bg-gray-900 scrollbar-hide bg-gray-100 text-gray-900">
@@ -110,6 +124,7 @@
   </header>
 
   <main class="flex-grow">
+    <!--Hero section-->
     <section data-scroll-section id="home" class="relative pt-28 bg-white dark:bg-gray-900 overflow-hidden ">
       <div class="max-w-screen-xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center min-h-[90vh] py-16">
         <!-- Profile Card Left -->
@@ -142,7 +157,7 @@
 
           <!-- CTA Buttons -->
           <div class="flex flex-wrap justify-center gap-4">
-            <a href="#contact" class="px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
+            <a href="#footer" class="px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
               Hire Me
             </a>
 
@@ -226,8 +241,9 @@
               <div
                 class="w-full max-w-xs min-h-[240px] flex flex-col justify-start items-start bg-white/10 dark:bg-green-900/30 backdrop-blur-lg border border-green-200/30 dark:border-green-800/30 rounded-2xl p-6 shadow-lg hover:scale-105 transition-transform duration-300 animate-fade-in-up">
                 <iconify-icon icon="mdi:shield-account-outline" class="text-green-500 text-4xl mb-4"></iconify-icon>
-                <h3 class="text-lg font-semibold text-green-700 dark:text-green-300 mb-1">Compliance</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Ensuring HR practices align with legal standards.
+                <h3 class="text-lg font-semibold text-green-700 dark:text-green-300 mb-1">HRMS/HRIS Mangement</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400"> Managing HRMS/HRIS systems to ensure compliance,
+                  accuracy, and efficient HR operations.
                 </p>
               </div>
             </div>
@@ -291,7 +307,6 @@
         </div>
       </div>
     </section>
-
 
     <!--Experience -->
     <section id="experience"
@@ -377,77 +392,67 @@
       </div>
     </section>
 
-
     <!--Form Section-->
-    <section id="contact" class="bg-white dark:bg-gray-900">
-      <div class="py-8 lg:py-12 px-3 mx-auto max-w-xl">
+    <!-- <section id="contact" class="bg-white dark:bg-gray-900">
+  <div class="py-8 lg:py-12 px-3 mx-auto max-w-xl">
+    <div
+      class="contact-card bg-white/40 dark:bg-green-900/20 backdrop-blur-md shadow-lg rounded-xl p-6 md:p-8 border border-gray-200 dark:border-gray-700 transition-all duration-300">
+      <h2 class="contact-animate mb-3 text-3xl tracking-tight font-bold text-center text-green-700 dark:text-green-300">
+        Contact Me
+      </h2>
 
-        <!-- Contact Card -->
-        <div
-          class="contact-card bg-white/40 dark:bg-green-900/20 backdrop-blur-md shadow-lg rounded-xl p-6 md:p-8 border border-gray-200 dark:border-gray-700 transition-all duration-300">
+      <p class="contact-animate mb-6 font-medium text-center text-gray-600 dark:text-gray-400 text-base">
+        Have questions, feedback, or a project in mind? Just drop your message — I’ll get back
+        to you as soon as possible.
+      </p>
 
-          <!-- Heading -->
-          <h2
-            class="contact-animate mb-3 text-3xl tracking-tight font-bold text-center text-green-700 dark:text-green-300">
-            Contact Me
-          </h2>
-
-          <p class="contact-animate mb-6 font-medium text-center text-gray-600 dark:text-gray-400 text-base">
-            Have questions, feedback, or a project in mind? Just drop your message — I’ll get back
-            to you as soon as possible.
+      <form action="#" id="form" class="space-y-6">
+        <div class="contact-animate">
+          <label for="email" class="block mb-1 text-sm font-medium text-gray-900 dark:text-gray-300">
+            Your Email
+          </label>
+          <input type="email" name="user_email" id="email" required
+            class="w-full p-2 text-sm text-gray-900 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+            placeholder="you@example.com" />
+          <p id="emailError" class="mt-1 text-sm text-red-600 hidden">
+            Please include '@' in your email
           </p>
-
-          <!-- Contact Form -->
-          <form action="#" class="space-y-6">
-            <!-- Email -->
-            <div class="contact-animate">
-              <label for="email" class="block mb-1 text-sm font-medium text-gray-900 dark:text-gray-300">
-                Your Email
-              </label>
-              <input type="email" id="email" required
-                class="w-full p-2 text-sm text-gray-900 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
-                placeholder="you@example.com" />
-              <p id="emailError" class="mt-1 text-sm text-red-600 hidden">
-                Please include '@' in your email
-              </p>
-            </div>
-
-            <!-- Subject -->
-            <div class="contact-animate">
-              <label for="subject" class="block mb-1 text-sm font-medium text-gray-900 dark:text-gray-300">
-                Subject
-              </label>
-              <input type="text" id="subject" required
-                class="w-full p-2 text-sm text-gray-900 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
-                placeholder="How can I help you?" />
-            </div>
-
-            <!-- Message -->
-            <div class="contact-animate">
-              <label for="message" class="block mb-1 text-sm font-medium text-gray-900 dark:text-gray-300">
-                Your Message
-              </label>
-              <textarea id="message" rows="4" required
-                class="w-full p-2 text-sm text-gray-900 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
-                placeholder="Leave your message here..."></textarea>
-            </div>
-
-            <!-- Submit Button -->
-            <div class="contact-animate">
-              <button type="submit"
-                class="py-2 px-4 text-sm font-semibold text-white bg-green-700 rounded-md shadow-sm hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-400 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-300 transition duration-300">
-                Send Message
-              </button>
-            </div>
-          </form>
         </div>
-      </div>
-    </section>
+
+        <div class="contact-animate">
+          <label for="subject" class="block mb-1 text-sm font-medium text-gray-900 dark:text-gray-300">
+            Subject
+          </label>
+          <input type="text" name="subject" id="subject" required
+            class="w-full p-2 text-sm text-gray-900 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+            placeholder="How can I help you?" />
+        </div>
+
+        <div class="contact-animate">
+          <label for="message" class="block mb-1 text-sm font-medium text-gray-900 dark:text-gray-300">
+            Your Message
+          </label>
+          <textarea id="message" name="message" rows="4" required
+            class="w-full p-2 text-sm text-gray-900 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+            placeholder="Leave your message here..."></textarea>
+        </div>
+
+        <div class="contact-animate">
+          <button type="submit"
+            class="py-2 px-4 text-sm font-semibold text-white bg-green-700 rounded-md shadow-sm hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-400 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-300 transition duration-300">
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section> -->
+
 
 
   </main>
 
-  <footer class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
+  <footer id="contact" class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
     <!-- Footer Grid -->
     <div
       class="footer-grid max-w-7xl mx-auto px-4 py-10 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -455,8 +460,7 @@
       <!-- Logo + Description -->
       <div class="flex flex-col items-start">
         <div class="flex items-center space-x-3">
-          <img src="https://i.pinimg.com/736x/e9/c5/1a/e9c51a0a6819c3b0032b44c46fd199b0.jpg" alt="Logo"
-            class="h-12 w-12 rounded-full shadow-md object-cover" />
+
           <span class="text-2xl font-bold text-gray-900 dark:text-white">Bhanu Dhama</span>
         </div>
         <p class="mt-3 text-sm font-semibold text-gray-900 dark:text-gray-400 leading-relaxed max-w-sm">
@@ -502,10 +506,12 @@
         <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">📞 +91 95993 76912</p>
         <a href="mailto:bhanudhama0125@outlook.com"
           class="inline-flex items-center gap-2 bg-green-700 text-white text-sm font-semibold px-4 py-2 rounded-md hover:bg-green-800 transition duration-300 shadow-md focus:outline-none focus:ring-2 focus:ring-green-400 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-300"
-          aria-label="Send Email to Bhanu Dhama">
+          aria-label="Email Bhanu Dhama">
           <i class="fas fa-envelope" aria-hidden="true"></i>
-          Send Email
+          Email Now
         </a>
+
+
       </div>
 
       <!-- Social Icons -->
@@ -538,8 +544,11 @@
   </footer>
 
 
+  <!--Functions Logic script-->
   <script src="index.js"></script>
+  <!--Locomotive Animation script-->
   <script src="animate.js"></script>
+
   <!--icons cdn-->
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=daisyui"></script>
@@ -548,6 +557,9 @@
   <!-- GSAP & ScrollTrigger -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js" defer></script>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 
 </body>

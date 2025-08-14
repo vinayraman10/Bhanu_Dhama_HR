@@ -1,52 +1,52 @@
-// Form validation for email
-const emailInput = document.getElementById("email");
-const errorText = document.getElementById("emailError");
-const form = document.querySelector("#contact form");
+// // Form validation for email
+// const emailInput = document.getElementById("email");
+// const errorText = document.getElementById("emailError");
+// const form = document.querySelector("#contact form");
 
-function setBorderColor(isValid) {
-  emailInput.classList.remove(
-    "border-red-500", "focus:ring-red-500", "focus:border-red-500",
-    "border-green-500", "focus:ring-green-500", "focus:border-green-500"
-  );
-  errorText.classList.add("hidden");
+// function setBorderColor(isValid) {
+//   emailInput.classList.remove(
+//     "border-red-500", "focus:ring-red-500", "focus:border-red-500",
+//     "border-green-500", "focus:ring-green-500", "focus:border-green-500"
+//   );
+//   errorText.classList.add("hidden");
 
-  if (isValid) {
-    emailInput.classList.add("border-green-500", "focus:ring-green-500", "focus:border-green-500");
-  } else {
-    emailInput.classList.add("border-red-500", "focus:ring-red-500", "focus:border-red-500");
-    errorText.classList.remove("hidden");
-  }
-}
+//   if (isValid) {
+//     emailInput.classList.add("border-green-500", "focus:ring-green-500", "focus:border-green-500");
+//   } else {
+//     emailInput.classList.add("border-red-500", "focus:ring-red-500", "focus:border-red-500");
+//     errorText.classList.remove("hidden");
+//   }
+// }
 
-emailInput.addEventListener("input", () => {
-  const value = emailInput.value.trim();
-  const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
-  if (value.length === 0) {
-    emailInput.classList.remove(
-      "border-red-500", "focus:ring-red-500", "focus:border-red-500",
-      "border-green-500", "focus:ring-green-500", "focus:border-green-500"
-    );
-    errorText.classList.add("hidden");
-  } else {
-    setBorderColor(isValid);
-  }
-});
+// emailInput.addEventListener("input", () => {
+//   const value = emailInput.value.trim();
+//   const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+//   if (value.length === 0) {
+//     emailInput.classList.remove(
+//       "border-red-500", "focus:ring-red-500", "focus:border-red-500",
+//       "border-green-500", "focus:ring-green-500", "focus:border-green-500"
+//     );
+//     errorText.classList.add("hidden");
+//   } else {
+//     setBorderColor(isValid);
+//   }
+// });
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value);
-  if (!isValid) {
-    setBorderColor(false);
-    emailInput.focus();
-    return;
-  }
-  form.reset();
-  emailInput.classList.remove(
-    "border-green-500", "focus:ring-green-500", "focus:border-green-500"
-  );
-  errorText.classList.add("hidden");
-  alert("Your message has been sent!");
-});
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value);
+//   if (!isValid) {
+//     setBorderColor(false);
+//     emailInput.focus();
+//     return;
+//   }
+//   form.reset();
+//   emailInput.classList.remove(
+//     "border-green-500", "focus:ring-green-500", "focus:border-green-500"
+//   );
+//   errorText.classList.add("hidden");
+//   alert("Your message has been sent!");
+// });
 
 // Set current year in footer
 document.getElementById("year").textContent = new Date().getFullYear();
@@ -115,7 +115,6 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('resize', updateDots);
   updateDots();
 
-  // Animate mobile scroll container itself
   if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
     gsap.from(scrollEl, {
       scrollTrigger: {
@@ -135,3 +134,23 @@ document.addEventListener('DOMContentLoaded', function () {
 if (typeof lucide !== "undefined") {
   lucide.createIcons();
 }
+
+// // emailjs.init('NwfdvgsZ5LJsaUotj'); // Your public key
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const form = document.querySelector("#form");
+
+//   form.addEventListener("submit", function (e) {
+//     e.preventDefault();
+
+//     emailjs
+//       .sendForm("service_b2mm2gv", "template_5yw072z", this, "NwfdvgsZ5LJsaUotj")
+//       .then(() => {
+//         alert("Message sent successfully!");
+//         form.reset();
+//       }, (error) => {
+//         console.error("EmailJS error:", error);
+//         alert("Failed to send message. Please try again.");
+//       });
+//   });
+// });
